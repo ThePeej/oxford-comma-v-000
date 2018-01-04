@@ -1,5 +1,7 @@
 def oxford_comma(array)
-  start = array.pop.join(",")
+  last = array.last
+  array.pop
+  start = array.join(",")
   start << ", and #{array.last}"
   start
 end
